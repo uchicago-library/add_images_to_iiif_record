@@ -1,4 +1,4 @@
-# Add_images_to_iiif
+# add_images_to_iiif
 
 ## Introduction
 
@@ -20,7 +20,7 @@ Following these instructions will install the tool to a virtual environment on y
 
 ## Examples
 
-```python
+```bash
 >>> extend_record -o extended_iiif_record.json --images [path to a CSV file containing the IIIF imges to add] [path to a IIIF record]
 ```
 
