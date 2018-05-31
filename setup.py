@@ -12,7 +12,7 @@ def get_readme():
     return content
 setup(
     name='CompletingTheIIIFRecord',
-    version='0.0.1',
+    version='1.0.0',
     author='Tyler Danstrom',
     author_email='tdanstrom@uchicago.edu',
     description='A CLI application to take a IIIF record containing metadata only and append images from a list of IIIF links',
@@ -21,10 +21,14 @@ setup(
     url='https://github.com/uchicago-library/add_images_to_iiif_record',
     packages=find_packages(),
     long_description=get_readme(),
+    entry_points = {
+                    
+        'console_scripts': ['extend_record=AddingImages2IIIF.__main__:main']
+    },
     dependency_links = [
         'https://github.com/uchicago-library/pyiiif/tarball/master#egg=pyiiif'
     ],
     install_requires = [
-
+        'requests'
     ]
 )
