@@ -21,7 +21,7 @@ Following these instructions will install the tool to a virtual environment on y
 ## Examples
 
 ```bash
->>> extend_record -o extended_iiif_record.json [path to a CSV file containing the IIIF imges to add] [path to a IIIF record]
+>>> extend_record -o extended_iiif_record.json [path to a text file containing the IIIF imges to add] [path to a IIIF record]
 ```
 
 Performing this action you will take a IIIF record on-disk, the text file containing list of IIIF images that you want to add to the existing IIIF record, and generate a new IIIF record with a sequence containing canvases for each of the IIIF images. Finally, the record will be saved to a file called 'extended_iiif_record.json'.
