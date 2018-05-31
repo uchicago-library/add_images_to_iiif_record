@@ -1,0 +1,1 @@
+https://github.com/uchicago-library/pyiiif/tarball/master#egg=pyiiif
